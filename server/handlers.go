@@ -13,6 +13,7 @@ import (
 	"github.com/warmans/resty"
 	"golang.org/x/net/context"
 	"html/template"
+	"log"
 )
 
 type NoteHandler struct {
@@ -80,7 +81,10 @@ func (h *EventStreamHandler) ServeHTTP(rw http.ResponseWriter, r *http.Request) 
 		case <-closeChecker.C:
 			return
 		case note := <-influxObserver.C:
-			c.WriteJSON(note)
+			if err := c.WriteJSON(note); err != nil {
+				Fail(rw, err.Error(), http.StatusInternalServerError)
+				return
+			}
 		}
 	}
 }
