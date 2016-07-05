@@ -1,0 +1,24 @@
+hash: 53e697e60fad3170ae51f3a25e0caa305d37688df2bffe6dc4b45d5493281c91
+updated: 2016-07-05T20:28:15.703397792+02:00
+imports:
+- name: github.com/gorilla/context
+  version: aed02d124ae4a0e94fea4541c8effd05bf0c8296
+- name: github.com/gorilla/mux
+  version: 9fa818a44c2bf1396a17f9d5a3c0f6dd39d2ff8e
+- name: github.com/gorilla/websocket
+  version: 54f9decdbfb3fe254c5df3d5aa234480989f4af0
+- name: github.com/influxdata/influxdb
+  version: 51954a08a93d3dd99dd5ad938eb64462dde40c88
+  subpackages:
+  - client/v2
+  - models
+  - pkg/escape
+- name: github.com/warmans/ctxhandler
+  version: d3d30f2ff86c9c41130b74ef5690e2c50ac83028
+- name: github.com/warmans/resty
+  version: c8f477f16b0985bb7571e6f7209605040c2b7611
+- name: golang.org/x/net
+  version: b400c2eff1badec7022a8c8f5bea058b6315eed7
+  subpackages:
+  - context
+devImports: []

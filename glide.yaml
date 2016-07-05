@@ -1,0 +1,9 @@
+package: github.com/warmans/anflux
+import:
+- package: github.com/influxdata/influxdb
+  subpackages:
+  - client/v2
+- package: github.com/warmans/resty
+- package: github.com/warmans/ctxhandler
+- package: github.com/gorilla/mux
+- package: github.com/gorilla/websocket
