@@ -13,7 +13,6 @@ import (
 	"github.com/warmans/resty"
 	"golang.org/x/net/context"
 	"html/template"
-	"log"
 )
 
 type NoteHandler struct {
