@@ -49,7 +49,7 @@ type Influx struct {
 }
 
 func (i *Influx) Initialize() error {
-	_, err := i.Exec(fmt.Sprintf("CREATE DATABASE IF NOT EXISTS %s", i.database))
+	_, err := i.Exec(fmt.Sprintf("CREATE DATABASE %s", i.database))
 	return err
 }
 
